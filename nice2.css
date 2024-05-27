@@ -1,0 +1,536 @@
+
+body {
+    text-decoration: none;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #ffa500, #ff4500); /* Degradado radial de naranja a naranja oscuro */ color: white; padding: 20px; border-radius: 10px;
+}
+
+/* Navigation Styles */
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;  /*BOX ZISING PARA EVITAR QUE LOS ELEMENTOS SE DESCUADREN*/
+}
+
+nav{
+    background: radial-gradient(circle, #ffa500, #ff4500);
+    height: 80px;
+    width: 100%;
+    border-radius: 50px;
+}
+.enlace{
+    position: absolute;
+    padding: 20px 50px;
+}
+.logo{
+    height: 40px;
+    text-decoration: none;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #fff;
+    font-size: 18px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+li a.active, li a:hover{
+    background: #e90808;
+    transition: .5s;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #ffffff;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: rgba(201, 15, 15, 0.924);
+        top: 80px;
+        right: -120%;
+        text-align: center;
+        transition: all .10s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    li a:hover, li a.active{
+        background: none;
+        color: #ffffff;
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+}
+
+
+
+
+/*logo principal*/
+.logo p{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+    transition: 0.3s;
+}
+.logo p:hover{
+    transform: scale(1.2);
+    color: rgb(209, 185, 185);
+}
+
+.contenido{
+    background-color: white;
+    padding-top: 15vh;
+
+
+}
+
+
+.contenido p{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+}
+
+
+.hover:hover{
+    color: orangered;
+    background-color: white;
+    opacity: 70%; /*opacidad de los elementos*/
+    border-radius: 10px;
+}
+
+
+.contenido #texto_dos{
+    font-size: 35px;
+}
+
+.contenido{
+    background: radial-gradient(circle, #ffa500, #ff4500); /* Degradado radial de naranja a naranja oscuro */ color: white; padding: 20px; border-radius: 10px;
+}
+
+
+body{
+    background: radial-gradient(circle, #ffa500, #ff4500); /* Degradado radial de naranja a naranja oscuro */ color: white; padding: 20px; border-radius: 10px;
+}
+
+h2{
+    text-align: center; /* alinear texto al centre*/
+    color: white;
+}
+
+.peliculas .contenedor {
+    display: flex;
+    flex-wrap: wrap; /* Para que los elementos se envuelvan si hay demasiados para caber en una línea */
+    gap: 10px; /* Espacio entre elementos */
+}
+
+.peliculas .estrenos {
+    flex: 1 1 20%; /* Crece y se contrae, ancho base del 20% */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto del elemento */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde de los elementos */
+    background: #f9f9f9; /* Fondo de los elementos */
+    text-align: center; /* Centrar el texto */
+    outline: 2px solid rgb(51, 49, 49);   
+    flex-basis: 200px;
+}
+
+.peliculas .imagen {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 400px; /* Altura fija para las imágenes */
+    object-fit: contain; /* Escala la imagen para caber dentro del contenedor sin recortarla */
+    background-color: #fff; /* Fondo blanco para las imágenes para evitar espacios vacíos */
+}
+
+/* Estilos para el botón */
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+.tienda .contenedor2 {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan si no caben en una sola fila */
+    gap: 10px; /* Espacio entre elementos */
+}
+/* Se agrego border radius a contenedor de cartelera*/
+.contenedor .estrenos{
+    border-radius: 10px;
+}
+
+
+
+
+.tienda .dulceria {
+    flex: 1 1 20%; /* Los elementos crecen y se contraen con un ancho base del 20% */
+    box-sizing: border-box; /* Incluye padding y border en el ancho y alto del elemento */
+    padding: 10px; /* Espacio interno */
+    border: 1px solid #ddd; /* Borde de los elementos */
+    background: #f9f9f9; /* Fondo de los elementos */
+    text-align: center; /* Centrar el texto */
+    border-radius: 10px;
+    outline: 2px solid rgb(51, 49, 49);   
+}
+
+.tienda .imagen {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: contain; /* Escala la imagen para caber dentro del contenedor sin recortarla */
+    background-color: #fff; /* Fondo blanco para las imágenes para evitar espacios vacíos */
+}
+
+/* Estilos para el botón */
+button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+button a {
+    color: white;
+    text-decoration: none;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+/*se agrega color al texto de las card*/
+h3{ 
+    color: gray;
+}
+
+p{
+    color: rgb(81, 76, 76);
+}
+
+strong{
+    color: rgb(81, 76, 76);
+}
+
+
+.relative{
+    position:relative;
+    width: 100%;
+    z-index: 1;
+}
+
+/*se acomodo el renglon 306*/
+.relative2{
+    position:relative;
+    top: -500px;
+    width: 45%;
+    left: 340px;
+    font-size: 12px;
+    background-color: rgba(10, 10, 10, 0.8);
+    color:white;
+    padding: 5px;
+    z-index: 2;
+}
+
+/*comentarios*/
+
+.cajacomentarios{
+    padding: 20px;
+    margin: auto;
+    width: auto;
+    height: 200px;
+    overflow: scroll; /* overflow que permite dar scroll*/
+    background: radial-gradient(circle, #ffa500, #ff4500);
+    border-radius: 20px;
+    outline: 1px solid black; /*borde en contenedor*/
+}
+
+.containerubicacion{
+    padding: 20px;
+    margin: auto;
+    width: auto;
+    box-sizing: border-box;  /*BOX ZISING PARA EVITAR QUE LOS ELEMENTOS SE DESCUADREN*/
+    outline: 1px solid black; /*borde en contenedor*/
+    border-radius: 20px;
+}
+
+
+
+ /*inicio de footer*/
+
+footer{
+    background-color: #3D3D3D;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 20px;
+}
+
+
+.footer-section h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: orange
+}
+
+
+.footer-section p, .footer-section ul, .footer-section a {
+    color: #ccc;
+    text-decoration: none;
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+
+.footer-section a:hover {
+    color: #ffa500;
+}
+
+
+.footer-section .contact p {
+    margin: 10px 0;
+}
+
+
+.footer-section .contact i {
+    margin-right: 10px;
+}
+
+
+.footer-bottom {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+
+.footer-bottom a {
+    color: #ffa500;
+    text-decoration: none;
+}
+
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box; /*evitar que se salgan los elementos*/
+        }
+
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+
+        .footer-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+
+        .footer-section {
+            flex: 1;
+            min-width: 250px;
+            margin: 20px;
+        }
+
+
+        .footer-section h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #ffa500; /* Color naranja */
+        }
+
+
+        .footer-section p, .footer-section ul, .footer-section a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 5px 0;
+            font-size: 14px;
+        }
+
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+
+        .footer-section a:hover {
+            color: #ffa500;
+        }
+
+
+        .footer-section .contact p {
+            margin: 10px 0;
+        }
+
+
+        .footer-section .contact i {
+            margin-right: 10px;
+        }
+
+
+        .footer-bottom {
+            background-color: #222;
+            color: #ccc;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 20px;
+            font-size: 14px;
+        }
+
+
+        .footer-bottom a {
+            color: #ffa500;
+            text-decoration: none;
+        }
+
+
+        .footer-bottom a:hover {
+            text-decoration: underline;
+        }
+
+                /*se agregó diseño de color al menu en pagina de formulario*/
+
+        .hover_uno{
+            color: rgba(86, 75, 75, 0.438);
+        }
+
+        .hover_dos{
+            color: rgba(86, 75, 75, 0.438);
+        }
+
+        .hover_tres{
+            color: rgba(86, 75, 75, 0.438);
+        }
+
+        .hover_cinco{
+            color: rgba(86, 75, 75, 0.438);
+        }
+
+        
+        html{
+            scroll-behavior: smooth;
+        }         /*se agregó diseño de transicion al menu y pagina del html*/
+
+        /* se agrega boton con link*/
+        .btn{
+            background-color: rgb(172, 170, 166);
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        .btn2{
+            background-color: rgb(172, 170, 166); opacity: 70%;
+            color: rgb(38, 25, 112);
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 10px;
+            border-radius: 5px;
+        }
+
+        /*se agrega border radius*/
+        .imagenfooter{
+            border-radius: 10px;
+        }
+
+
